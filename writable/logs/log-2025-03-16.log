@@ -1,0 +1,17 @@
+CRITICAL - 2025-03-16 18:20:43 --> ErrorException: Undefined array key "required"
+[Method: GET, Route: Admin/profile]
+in APPPATH/Views/Admin/profile.php on line 16.
+ 1 APPPATH/Views/Admin/profile.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/Admin/index.php(34): include('/home/alamall1/i-volunteer.ly/portal/app/Views/Admin/profile.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home/alamall1/i-volunteer.ly/portal/app/Views/Admin/index.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Admin.php(43): view()
+ 7 APPPATH/Controllers/Admin.php(112): App\Controllers\Admin->page()
+ 8 APPPATH/Config/Routes.php(32): App\Controllers\Admin->profile()
+ 9 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+10 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+11 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
