@@ -521,15 +521,17 @@ class Admin extends BaseController
             }
             foreach ($entityFields as $key => $value) 
             {
-                if (is_array($value)) {$entityFields[$key] = json_encode($value, JSON_UNESCAPED_UNICODE);}
-                if ($key === 'password' && !empty($value)) {$entityFields[$key] = password_hash($value, PASSWORD_DEFAULT);}
+                if (is_array($value)){$entityFields[$key] = json_encode($value, JSON_UNESCAPED_UNICODE);}
+                if ($key === 'password') {if (!empty($value)) {$entityFields[$key] = password_hash($value, PASSWORD_BCRYPT);} else {unset($entityFields[$key]);}}
             }
             $this->data->table($tableName);
             $isUpdated = $this->data->updateData($entityId, $entityFields);
             if ($isUpdated) 
             {
                 return $this->response->setJSON(["status" => "success","message" => "تم تحديث البيانات بنجاح",]);
-            } else {
+            } 
+            else
+            {
                 return $this->response->setJSON(["status" => "error","message" => "حدثت مشكلة أثناء تحديث البيانات",]);
             }
     
@@ -538,9 +540,6 @@ class Admin extends BaseController
             return $this->response->setJSON(["status" => "error","message" => $e->getMessage(),]);
         }
     }
-
-
-
 
     public function getEntityData($tablename)
     {
@@ -591,6 +590,7 @@ class Admin extends BaseController
                     "type" => "password",
                     "class_id" => "col-md-6",
                     "required" => false,
+                    "empty" => true,
                 ],
                 "phone" => [
                     "id" => "phone",

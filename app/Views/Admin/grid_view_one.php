@@ -508,9 +508,12 @@
                         $.each(response.data, function (field, value) {
                             const fieldId = `${entityName}_${field}_${id}`;
                             const element = $(`[id^="${entityName}_${field}_"][id$="_${id}"]`);
-
+            
                             if (element.length) {
-                                if (element.is('input[type="text"], textarea, input[type="email"], input[type="password"], input[type="phone"], input[type="date"]')) {
+                                if (element.is('input[type="password"]')) {
+                                    // ✅ Prevent password pre-filling
+                                    element.val('');
+                                } else if (element.is('input[type="text"], textarea, input[type="email"], input[type="phone"], input[type="date"]')) {
                                     // Handle text, textarea, and similar inputs
                                     element.val(value);
                                 } else if (element.is('select')) {
@@ -542,9 +545,10 @@
                     }
                 },
                 error: function (xhr) {
-                    alert(`حدث خطأ: ${xhr.responseJSON?.message}`);
+                    alert(`حدث خطأ: ${xhr.responseJSON?.message || 'حاول مرة أخرى.'}`);
                 }
             });
+
         }
 
 

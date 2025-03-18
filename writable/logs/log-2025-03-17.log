@@ -1,0 +1,205 @@
+CRITICAL - 2025-03-17 12:48:25 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+[Method: GET, Route: Admin/calendar_activities]
+in APPPATH/Controllers/Admin.php on line 897.
+ 1 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar_activities()
+ 2 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 3 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 12:48:31 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+[Method: GET, Route: Admin/calendar_activities]
+in APPPATH/Controllers/Admin.php on line 897.
+ 1 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar_activities()
+ 2 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 3 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 12:48:32 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+[Method: GET, Route: Admin/calendar_activities]
+in APPPATH/Controllers/Admin.php on line 897.
+ 1 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar_activities()
+ 2 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 3 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 12:48:36 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+[Method: GET, Route: Admin/calendar_activities]
+in APPPATH/Controllers/Admin.php on line 897.
+ 1 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar_activities()
+ 2 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 3 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 12:48:36 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+[Method: GET, Route: Admin/calendar_activities]
+in APPPATH/Controllers/Admin.php on line 897.
+ 1 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar_activities()
+ 2 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 3 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 12:48:37 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+[Method: GET, Route: Admin/calendar_activities]
+in APPPATH/Controllers/Admin.php on line 897.
+ 1 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar_activities()
+ 2 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 3 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 12:48:38 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+[Method: GET, Route: Admin/calendar_activities]
+in APPPATH/Controllers/Admin.php on line 897.
+ 1 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar_activities()
+ 2 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 3 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 12:48:38 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+[Method: GET, Route: Admin/calendar_activities]
+in APPPATH/Controllers/Admin.php on line 897.
+ 1 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar_activities()
+ 2 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 3 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 12:48:38 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+[Method: GET, Route: Admin/calendar_activities]
+in APPPATH/Controllers/Admin.php on line 897.
+ 1 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar_activities()
+ 2 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 3 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 12:50:19 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+[Method: GET, Route: Admin/calendar_activities]
+in APPPATH/Controllers/Admin.php on line 897.
+ 1 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar_activities()
+ 2 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 3 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 12:50:42 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+[Method: GET, Route: Admin/calendar_activities]
+in APPPATH/Controllers/Admin.php on line 897.
+ 1 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar_activities()
+ 2 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 3 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 12:51:43 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+[Method: GET, Route: Admin/calendar_activities]
+in APPPATH/Controllers/Admin.php on line 897.
+ 1 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar_activities()
+ 2 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 3 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 12:52:19 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+[Method: GET, Route: Admin/calendar_activities]
+in APPPATH/Controllers/Admin.php on line 897.
+ 1 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar_activities()
+ 2 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 3 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 12:52:29 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+[Method: GET, Route: Admin/calendar_activities]
+in APPPATH/Controllers/Admin.php on line 897.
+ 1 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar_activities()
+ 2 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 3 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 12:52:45 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+[Method: GET, Route: Admin/calendar_activities]
+in APPPATH/Controllers/Admin.php on line 897.
+ 1 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar_activities()
+ 2 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 3 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 12:54:16 --> ErrorException: Undefined array key "title"
+[Method: GET, Route: Admin/calendar_activities]
+in APPPATH/Controllers/Admin.php on line 900.
+ 1 APPPATH/Controllers/Admin.php(900): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar_activities()
+ 3 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 4 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 12:54:24 --> ErrorException: Undefined array key "title"
+[Method: GET, Route: Admin/calendar_activities]
+in APPPATH/Controllers/Admin.php on line 900.
+ 1 APPPATH/Controllers/Admin.php(900): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar_activities()
+ 3 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 4 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 12:56:08 --> ErrorException: Array to string conversion
+[Method: GET, Route: Admin/calendar_activities]
+in APPPATH/Controllers/Admin.php on line 902.
+ 1 APPPATH/Controllers/Admin.php(902): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar_activities()
+ 3 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 4 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 13:25:57 --> Error: Call to undefined method App\Controllers\Admin::translate()
+[Method: GET, Route: Admin/dashboard]
+in APPPATH/Controllers/Admin.php on line 65.
+ 1 APPPATH/Config/Routes.php(32): App\Controllers\Admin->dashboard()
+ 2 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 3 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-03-17 13:32:40 --> ErrorException: Undefined variable $language
+[Method: GET, Route: Admin/calendar]
+in APPPATH/Controllers/Admin.php on line 41.
+ 1 APPPATH/Controllers/Admin.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin.php(85): App\Controllers\Admin->page()
+ 3 APPPATH/Config/Routes.php(32): App\Controllers\Admin->calendar()
+ 4 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()

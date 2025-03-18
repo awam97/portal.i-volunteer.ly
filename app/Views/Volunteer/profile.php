@@ -127,11 +127,14 @@
             }),
             success: function(response) {
                 if (response.status === 'success') {                                        
-                    $.each(response.data, function(field, value) {                                                
-                        const fieldId = `<?= $entityName; ?>_${field}_${entityId}`;                                                
+                    $.each(response.data, function(field, value) {                                                            
+                        const fieldId = `<?= $entityName; ?>_${field}_${entityId}`;                                                  
                         const element = $(`#${fieldId}`);                    
+        
                         if (element.length) {
-                            if (element.is('input, textarea')) {                                
+                            if (element.is('input[type="password"]')) { 
+                                element.val(''); // Keep password fields empty
+                            } else if (element.is('input, textarea')) {                                
                                 element.val(value);
                             } else if (element.is('select')) {                                
                                 element.val(value).change();

@@ -1,0 +1,10 @@
+CRITICAL - 2025-03-18 10:19:40 --> ErrorException: Undefined variable $password_verify
+[Method: POST, Route: Connect]
+in APPPATH/Controllers/ApiController.php on line 30.
+ 1 APPPATH/Controllers/ApiController.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->connect()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()

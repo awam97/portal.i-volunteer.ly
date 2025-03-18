@@ -286,69 +286,49 @@ class Volunteer extends BaseController
         $entityId = $postData['id_entity'] ?? null;
         $entityFields = $postData;
         unset($entityFields['table'], $entityFields['id_entity']);
-    
-        if (!$tableName || !$entityId || empty($entityFields)) {
-            return $this->response->setJSON([
-                'status' => 'error',
-                'message' => 'Table name, entity ID, and fields are required.'
-            ]);
+        if (!$tableName || !$entityId || empty($entityFields)) 
+        {
+            return $this->response->setJSON(['status' => 'error','message' => 'Table name, entity ID, and fields are required.']);
         }
-    
-        try {
+        try 
+        {
             $uploadedFile = null;
-            foreach ($this->request->getFiles() as $inputName => $file) {
-                if ($file->isValid() && !$file->hasMoved()) {
+            foreach ($this->request->getFiles() as $inputName => $file) 
+            {
+                if ($file->isValid() && !$file->hasMoved()) 
+                {
                     $uploadedFile = $file;
                     break;
                 }
             }
-    
-            if ($uploadedFile) {
-                $uploadDir = FCPATH . 'uploads/' . $tableName . '_files/';
-                if (!is_dir($uploadDir)) {
-                    mkdir($uploadDir, 0777, true);
-                }
-    
-                $filePattern = $uploadDir . $entityId . '.*';
-
-                foreach (glob($filePattern) as $file) {
-                    if (file_exists($file)) {
-                        unlink($file);
-                    }
-                }
-    
+            if ($uploadedFile) 
+            {
+                $uploadDir = FCPATH . "uploads/" . $tableName . "_files/";
+                if (!is_dir($uploadDir)){mkdir($uploadDir, 0777, true);}
+                $filePattern = $uploadDir . $entityId . ".*";
+                foreach (glob($filePattern) as $existingFile) {if (file_exists($existingFile)) {unlink($existingFile);}}
                 $fileExtension = $uploadedFile->getClientExtension();
-                $fileName = $entityId . '.' . $fileExtension;
-                $filePath = $uploadDir . $fileName;
-    
+                $fileName = $entityId . "." . $fileExtension;
                 $uploadedFile->move($uploadDir, $fileName);
             }
-    
-            foreach ($entityFields as $key => $value) {
-                if (is_array($value)) {
-                    $entityFields[$key] = json_encode($value);
-                }
+            foreach ($entityFields as $key => $value) 
+            {
+                if (is_array($value)){$entityFields[$key] = json_encode($value, JSON_UNESCAPED_UNICODE);}
+                if ($key === 'password') {if (!empty($value)) {$entityFields[$key] = password_hash($value, PASSWORD_BCRYPT);} else {unset($entityFields[$key]);}}
             }
-            
             $this->data->table($tableName);
             $isUpdated = $this->data->updateData($entityId, $entityFields);
-    
-            if ($isUpdated) {
-                return $this->response->setJSON([
-                    'status' => 'success',
-                    'message' => 'تم تحديث البيانات بنجاح'
-                ]);
-            } else {
-                return $this->response->setJSON([
-                    'status' => 'error',
-                    'message' => 'حدثت مشكلة أثناء تحديث البيانات'
-                ]);
+            if ($isUpdated) 
+            {
+                return $this->response->setJSON(['status' => 'success','message' => 'تم تحديث البيانات بنجاح']);
             }
-        } catch (\Exception $e) {
-            return $this->response->setJSON([
-                'status' => 'error',
-                'message' => $e->getMessage()
-            ]);
+            else 
+            {
+                return $this->response->setJSON(['status' => 'error','message' => 'حدثت مشكلة أثناء تحديث البيانات']);
+            }
+        } catch (\Exception $e) 
+        {
+            return $this->response->setJSON(['status' => 'error','message' => $e->getMessage()]);
         }
     }
 
@@ -458,7 +438,7 @@ class Volunteer extends BaseController
                     'id' => 'password',
                     'placeholder' => 'أدخل كلمة المرور',
                     'type' => 'password',                    
-                    'required' => true
+                    'required' => false
                 ],
                 'identity' => [
                     'id' => 'identity',

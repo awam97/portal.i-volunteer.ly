@@ -691,8 +691,12 @@
                         $.each(response.data, function (field, value) {
                             const fieldId = `${entityName}_${field}_${id}`;
                             const element = $(`[id^="${entityName}_${field}_"][id$="_${id}"]`);
+            
                             if (element.length) {
-                                if (element.is('input[type="text"], input[type="email"], input[type="password"], input[type="phone"], input[type="date"]')) {                                
+                                if (element.is('input[type="password"]')) {  
+                                    // ✅ Prevent password field from being filled with a hashed value
+                                    element.val('');
+                                } else if (element.is('input[type="text"], input[type="email"], input[type="phone"], input[type="date"]')) {                                
                                     element.val(value);
                                 } else if (element.is('select')) {                                
                                     element.val(value).change();
@@ -712,8 +716,7 @@
                                 } else if (element.is('img')) {                                
                                     element.attr('src', value);
                                 } else if (element.is('textarea')) {
-                                   
-                                   element.summernote({
+                                    element.summernote({
                                         height: 200,
                                         placeholder: 'اكتب المحتوى هنا ...',
                                         lang: 'ar-AR',
@@ -728,10 +731,10 @@
                                             customMediaButton: function (context) {
                                                 var ui = $.summernote.ui;
                                                 var button = ui.button({
-                                                contents: '<i class="note-icon-picture"></i> إضافة وسائط', // Icon and label
-                                                tooltip: 'إضافة وسائط',
-                                                click: function () {
-                                                    customMediaButtonClick(element.attr('id')); // Pass the current editor ID
+                                                    contents: '<i class="note-icon-picture"></i> إضافة وسائط',
+                                                    tooltip: 'إضافة وسائط',
+                                                    click: function () {
+                                                        customMediaButtonClick(element.attr('id'));
                                                     }
                                                 });
                                                 return button.render();
@@ -750,6 +753,7 @@
                     alert(`حدث خطأ: ${xhr.responseJSON?.message}`);
                 }
             });
+
         }
 
         

@@ -298,7 +298,7 @@ class Home extends BaseController
         if (!empty($limit)) {$builder->limit($limit);}
         return $builder->get()->getResult();
     }
-
+    
     private function validate_login($input, $password, $type)
     {
         $column = match ($type) {'email' => 'email','phone' => 'phone','username' => 'username',default => null};
@@ -316,7 +316,7 @@ class Home extends BaseController
     public function verify_login()
     {
         if ($this->request->getMethod() === 'POST') {
-            $userInput = $this->request->getPost('user'); // Single input field for email/phone/username
+            $userInput = $this->request->getPost('user');
             $password = $this->request->getPost('password');
             
             if (filter_var($userInput, FILTER_VALIDATE_EMAIL)) {
@@ -360,7 +360,7 @@ class Home extends BaseController
             $entityArray = (array)$entityFields;
             if (isset($entityArray['password'])) 
             {
-                $entityArray['password'] = password_hash($entityArray['password'], PASSWORD_DEFAULT);
+                $entityArray['password'] = password_hash($entityArray['password'], PASSWORD_BCRYPT);
             }
             $entityArray['created_at'] = date('Y-m-d');
             $this->data->setFieldsAndPrimaryKey(array_keys($entityArray), 'id')->table($tableName);

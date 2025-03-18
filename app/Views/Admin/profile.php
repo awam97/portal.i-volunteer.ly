@@ -128,11 +128,16 @@
             success: function(response) {
                 if (response.status === 'success') {                                        
                     $.each(response.data, function(field, value) {                                                
-                        const fieldId = `<?= $entityName; ?>_${field}_${entityId}`;                                                
+                        const fieldId = `<?= $entityName; ?>_${field}_${entityId}`;                                                  
                         const element = $(`#${fieldId}`);                    
                         if (element.length) {
-                            if (element.is('input, textarea')) {                                
-                                element.val(value);
+                            if (element.is('input, textarea')) {   
+                                if (element.attr('type') === 'password') {
+                                    // ✅ Keep password fields empty
+                                    element.val('');
+                                } else {
+                                    element.val(value);
+                                }
                             } else if (element.is('select')) {                                
                                 element.val(value).change();
                             } else if (element.is('img')) {                                
